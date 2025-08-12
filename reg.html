@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type=text], input[type=email], input[type=password] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type=submit] {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration</h2>
+    <form action="submit.php" method="POST">
+        <label>Full Name:</label>
+        <input type="text" name="fullname" required>
+        
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+</body>
+</html>
